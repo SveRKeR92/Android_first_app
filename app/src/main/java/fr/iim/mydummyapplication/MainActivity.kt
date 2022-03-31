@@ -39,11 +39,11 @@ class MainActivity : AppCompatActivity(), MainFragment.MainFragmentListener {
 
     }
 
-    override fun OnHelloClickListener(email: String, password: String, checkBox: Boolean) {
+    override fun OnHelloClickListener(email: String) {
         Log.d(LOG_TAG, "click event set $email")
         supportFragmentManager
             .beginTransaction()
-            .replace(R.id.mainContainer, HelloFragment.newInstance(email, password, checkBox))
+            .replace(R.id.mainContainer, HelloFragment.newInstance(email))
             .commitNow()
     }
 
