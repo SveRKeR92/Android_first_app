@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">My Dummy Application</string>
+    <string name="kappa" translatable="false">Kappa</string>
+    <string name="todo" translatable="false">TODO</string>
+    <string name="email" translatable="false">Email</string>
+    <string name="hello">Bonjour, %s</string>
+    <string name="title_activity_maps" translatable="false">MapsActivity</string>
+    <string name="password" translatable="false">Password</string>
+    <string name="login" translatable="false">Login</string>
+    <string name="city_name">City name</string>
+    <string name="go_to_map">Go to Map</string>
+</resources>
