@@ -12,17 +12,17 @@ class HelloActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_hello)
 
-        val message = intent.getStringExtra(EXTRA_FIRST_NAME)
+        val message = intent.getStringExtra(EXTRA_EMAIL)
         findViewById<TextView>(R.id.helloFragmentTextView).text = getString(R.string.hello, message)
 
     }
 
     companion object {
-        const val EXTRA_FIRST_NAME = "HELLO_FIRST_NAME"
+        const val EXTRA_EMAIL = "HELLO_EMAIL"
 
-        fun newInstance(context: Context, firstName : String): Intent{
+        fun newInstance(context: Context, email : String): Intent{
             return Intent(context, HelloActivity::class.java).apply {
-                putExtra(EXTRA_FIRST_NAME, firstName)
+                putExtra(EXTRA_EMAIL, email)
             }
         }
     }

@@ -12,3 +12,5 @@ Click Go to Map button to see google map.
 Note that there may be some crashes when opening the map, uninstall and rebuild the app should make it work again.
 
 
+### For the application to build properly
+Add your own Google Maps API key to the local.properties file. Crashes otherwise.
